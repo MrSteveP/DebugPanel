@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             x:Class="DebugPanelTest.DebugPanelButton">
+    <ContentPage.Content>
+        <StackLayout x:Name="ExpandButton" BackgroundColor="LightGray" HorizontalOptions="Center" VerticalOptions="End" Padding="10">
+            <Image HorizontalOptions="CenterAndExpand" Source="collapse_dark" />
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Open_Tapped"/>
+                <PanGestureRecognizer PanUpdated="Open_Tapped" />
+            </StackLayout.GestureRecognizers>
+        </StackLayout>
+    </ContentPage.Content>
+</pages:PopupPage>
